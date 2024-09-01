@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADVENA</title>
+    <title>BEEDIGITAL</title>
 
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" />
 
     <!-- 
     - custom css link
@@ -35,15 +35,13 @@
     <header class="header" data-header>
       <div class="container">
         <h1 class="h1 logo">
-          <a href="#">ADVENA<span>.</span></a>
+          <a href="#">BEEDIGITAL<span>.</span></a>
         </h1>
 
         <div class="navbar-actions">
           <select name="language" id="lang">
-            <option value="en">En</option>
             <option value="fr">Fr</option>
-            <option value="ar">Ar</option>
-            <option value="es">Es</option>
+            <option value="en">En</option>
           </select>
 
           <button
@@ -71,19 +69,25 @@
           <ul class="navbar-list">
             <li>
               <a href="#home" class="navbar-link" data-translate="home"
-                >Home.</a
+                >Home</a
               >
             </li>
 
             <li>
               <a href="#about" class="navbar-link" data-translate="about"
-                >About.</a
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a href="#services" class="navbar-link" data-translate="services"
+                >Services</a
               >
             </li>
 
             <li>
               <a href="#skills" class="navbar-link" data-translate="skills"
-                >Skills.</a
+                >Skills</a
               >
             </li>
 
@@ -92,13 +96,13 @@
                 href="#portfolio"
                 class="navbar-link"
                 data-translate="portfolio"
-                >Portfolio.</a
+                >Portfolio</a
               >
             </li>
 
             <li>
               <a href="#contact" class="navbar-link" data-translate="contact"
-                >Contact.</a
+                >Contact</a
               >
             </li>
           </ul>
@@ -132,7 +136,7 @@
 
             <a
               href="#contact"
-              class="btn btn-primary"
+              class="btn btn-primary btnfirst"
               data-translate="getintouch"
               >Get in touch</a
             >
@@ -194,7 +198,7 @@
             </li>
 
             <li>
-              <a href="#" class="stats-card">
+              <a href="#portfolio" class="stats-card">
                 <div class="card-icon">
                   <img
                     src="./assets/images/stats-card_icon-2.png"
@@ -237,7 +241,7 @@
           <figure class="about-banner">
             <div class="container">
               <h1 class="h1 logo">
-                <a id="biga" href="#">ADVENA<span>.</span></a>
+                <img class="biglogo" src="/assets/images/logo-blanc.png" data-logo>
               </h1>
             </div>
           </figure>
@@ -808,13 +812,15 @@
                   <a
                     href="mailto:almasri.ridwan@outlook.com"
                     class="contact-info"
+                    data-translate="email1"
                     >almasri.ridwan@outlook.com</a
                   >
 
                   <a
                     href="mailto:relation.contact@advena.fr"
                     class="contact-info"
-                    >relation.contact@advena.fr</a
+                    data-translate="email2"
+                    >ceo@advena.fr</a
                   >
                 </div>
               </li>
@@ -867,7 +873,7 @@
                   name="name"
                   id="name"
                   required
-                  placeholder="Adam Shajar"
+                  placeholder="Sarah Pelle"
                   class="input-field"
                 />
 
@@ -884,7 +890,7 @@
                   name="email"
                   id="email"
                   required
-                  placeholder="adam.shajar@mail.com"
+                  placeholder="sarah.pelle@gmail.com"
                   class="input-field"
                 />
 
@@ -938,11 +944,11 @@
     <footer class="footer">
       <div class="container">
         <p class="h1 logo">
-          <a href="#"> Ridwan AL MASRI<span>.</span> </a>
+          <img class="logofooter" src="/assets/images/hero-banner-sm.png">
         </p>
 
         <p class="copyright">
-          &copy; 2024 <a href="#">Ridwan AL MASRI</a>. All rights reserved
+          &copy; 2024 <a href="#">BEEDIGITAL</a>. All rights reserved
         </p>
       </div>
     </footer>

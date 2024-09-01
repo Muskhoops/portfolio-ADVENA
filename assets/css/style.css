@@ -20,9 +20,9 @@
    * colors
    */
 
-  --raw-seinna: hsl(210, 57%, 50%);
+  --raw-seinna: hsl(184, 50%, 48%);
   --sizzling-sunrise: hsl(200, 89%, 55%);
-  --scarlet: hsl(220, 79%, 53%);
+  --scarlet: hsl(184, 50%, 48%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
@@ -34,7 +34,7 @@
   --ff-poppins: 'Poppins', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
 
-  --fs-1: 2rem;
+  --fs-1: 1.90rem;
   --fs-2: calc(1.813rem + 1vw);
   --fs-3: calc(1.313rem + 1vw);
   --fs-4: 1.4rem;
@@ -212,7 +212,16 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.btn-primary { border-color: var(--color-primary); }
+.btnfirst {
+  margin-top: 80px;
+  @media only screen and (max-width: 769px) {
+    margin-top: 0px; /* Ajustez la taille de la police selon vos besoins */
+  }
+}
+
+.btn-primary { 
+  border-color: var(--color-primary);
+ }
 
 .btn-primary:is(:hover, :focus) {
   background: var(--color-primary);
@@ -328,6 +337,26 @@ body.active { overflow: hidden; }
   /* Pour les téléphones en mode paysage et portrait */
   @media only screen and (max-width: 768px) {
     font-size: 50px; /* Ajustez la taille de la police selon vos besoins */
+  }
+}
+
+.biglogo {
+  width: 550px;
+  margin-left: -50px;
+  margin-bottom: 75px;
+
+  /* Pour les tablettes en mode paysage et portrait */
+  @media only screen and (max-width: 1025px) {
+    width: 500px; /* Ajustez la taille de la police selon vos besoins */
+    margin-left: -50px;
+  }
+
+  /* Pour les téléphones en mode paysage et portrait */
+  @media only screen and (max-width: 426px) {
+    width: 390px; /* Ajustez la taille de la police selon vos besoins */
+    margin-left: -10px;
+    margin-top: -90px;
+    margin-bottom: -30px;
   }
 }
 
@@ -456,7 +485,7 @@ body.active { overflow: hidden; }
 .navbar-link::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 80%;
   transform: translateY(-50%);
   left: 0;
   height: 5px;
@@ -503,6 +532,22 @@ main { overflow-x: hidden; }
 }
 
 .hero .btn-primary { margin-inline: auto; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out; /* Départ rapide */
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-banner img {
+  animation: rotate 1s cubic-bezier(0.17, 0.67, 0.97, 0.67) forwards; /* Rotation pendant 3 secondes avec un timing plus rapide au début */
+}
+
+
 
 
 
@@ -885,6 +930,14 @@ textarea.input-field {
   padding-block: 20px;
   text-align: center;
   box-shadow: var(--shadow-1);
+}
+
+.logofooter {
+  width: 80px;
+  @media only screen and (max-width: 769px) {
+    margin-left: auto;
+    margin-right: auto; /* Ajustez la taille de la police selon vos besoins */
+  }
 }
 
 .footer .logo { margin-bottom: 15px; }
